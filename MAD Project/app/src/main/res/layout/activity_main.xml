@@ -13,6 +13,14 @@
         android:layout_height="600dp"
         android:background="@drawable/admin_bg"/>
 
+    <ImageView
+        android:layout_marginTop="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/fd"
+        />
+
     <Button
         android:id="@+id/admin_button"
         android:layout_width="wrap_content"
@@ -30,7 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="420dp"
-        android:text="Welcome to the Petti Kade"
+        android:text="Welcome to the FOODSNAP"
         android:layout_below="@id/admin_button"
         android:textSize="30sp"
         android:textStyle="bold"
