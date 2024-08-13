@@ -163,7 +163,7 @@
             android:layout_marginTop="40dp"
             android:layout_marginRight="30dp"
             android:backgroundTint="#009688"
-            android:onClick="addNewOnClick"
+            android:onClick="analyticsPanelClick"
             android:text="Analytics panel"
             android:layout_marginBottom="30dp"
             app:cornerRadius="15dp" />

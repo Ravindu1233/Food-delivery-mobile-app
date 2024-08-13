@@ -1,29 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-
     <!-- Permissions for reading and writing external storage -->
     <uses-feature
         android:name="android.hardware.camera"
         android:required="false" />
 
-    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-
-
-    <!-- Optional permissions for backward compatibility -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- Optional permissions for backward compatibility -->
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
     <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
     <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" /> <!-- For backward compatibility (optional) -->
-
     <!-- Optional location permissions (if your app uses location features) -->
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -35,6 +30,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Food_Deliver_MobileApp"
         tools:targetApi="31">
+        <activity
+            android:name=".AnalyticsActiviy"
+            android:exported="false" />
         <activity
             android:name=".EditShopActivity"
             android:exported="false" />
@@ -82,11 +80,10 @@
         <activity android:name=".AddActivity" />
         <activity android:name=".AdminAddPromotionActivity" />
         <activity android:name=".OrderDetailsActivity" />
-        <activity android:name=".OrderSummaryActivity"/>
-        <activity android:name=".ViewOrdersActivity"/>
-        <activity android:name=".UserOrderActivity"/>
-        <activity android:name=".FeedbackActivity"/>
-
+        <activity android:name=".OrderSummaryActivity" />
+        <activity android:name=".ViewOrdersActivity" />
+        <activity android:name=".UserOrderActivity" />
+        <activity android:name=".FeedbackActivity" />
     </application>
 
 </manifest>
