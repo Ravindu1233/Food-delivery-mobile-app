@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/promotion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Add Promotion Now"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/promotion_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/promotion"
+        android:layout_centerHorizontal="true"
+        android:text="Promotion Name"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:id="@+id/promotion_name_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/promotion_name_text"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Promotion Name"
+        android:textAlignment="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/promotion_description_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/promotion_name_edit"
+        android:layout_marginTop="20dp"
+        android:text="Promotion Description"
+        android:textSize="18sp"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/promotion_description_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/promotion_description_text"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Promotion Description"
+        android:textAlignment="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+         />
+
+    <TextView
+        android:id="@+id/promotion_percentage_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/promotion_description_edit"
+        android:layout_marginTop="20dp"
+        android:text="Promotion Percentage"
+        android:textSize="18sp"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/promotion_percentage_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/promotion_percentage_text"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Promotion Percentage"
+        android:textAlignment="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/save_promotion_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/promotion_percentage_edit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Add Promotion"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+</RelativeLayout>

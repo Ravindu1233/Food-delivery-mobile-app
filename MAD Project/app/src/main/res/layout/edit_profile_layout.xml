@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileActivity">
+
+    <TextView
+        android:id="@+id/profile_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Your Profile Information"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/edit_profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/profile_title"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/dpphoto" />
+
+    <Button
+        android:id="@+id/select_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#E10505"
+        android:text="Update Image" />
+
+    <EditText
+        android:id="@+id/edit_profile_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/select_image_button"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textAlignment="center"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/edit_profile_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_profile_name"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        android:textAlignment="center"
+        android:layout_marginEnd="16dp"
+        android:hint="Phone" />
+
+    <EditText
+        android:id="@+id/edit_profile_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_profile_phone"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        android:textAlignment="center"
+        android:layout_marginEnd="16dp"
+        android:hint="Address" />
+
+    <EditText
+        android:id="@+id/edit_profile_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_profile_address"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        android:textAlignment="center"
+        android:layout_marginEnd="16dp"
+        android:hint="City" />
+
+    <Button
+        android:id="@+id/save_profile_button"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/edit_profile_city"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textSize="18sp"
+        android:backgroundTint="#06930C"
+        android:text="Save" />
+
+
+</RelativeLayout>

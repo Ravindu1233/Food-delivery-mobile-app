@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".EditShopActivity">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Shop"
+            android:textSize="25dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/toolbar"/>
+
+        <TextView
+            android:id="@+id/second_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter shop details below"
+            android:textSize="16dp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/title"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_below="@id/second_title"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Name:"/>
+
+        <EditText
+            android:id="@+id/edit_shop_name_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/name"
+            android:hint="Enter name here"
+            />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_below="@id/edit_shop_name_input"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Address:"/>
+
+        <EditText
+            android:id="@+id/edit_shop_address_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/address"
+            android:hint="Enter adress here"
+            />
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_below="@id/edit_shop_address_input"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="City:"/>
+
+        <EditText
+            android:id="@+id/edit_shop_city_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/city"
+            android:hint="Enter city here"
+            />
+
+        <TextView
+            android:id="@+id/contact"
+            android:layout_below="@id/edit_shop_city_input"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Contact Number:"/>
+
+        <EditText
+            android:id="@+id/edit_shop_contact_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/contact"
+            android:hint="Enter contact here"
+            />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_below="@id/edit_shop_contact_input"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Email:"/>
+
+        <EditText
+            android:id="@+id/edit_shop_email_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/email"
+            android:hint="Enter email here"
+            />
+
+        <TextView
+            android:id="@+id/open"
+            android:layout_below="@id/edit_shop_email_input"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Open Time:"/>
+
+        <EditText
+            android:id="@+id/edit_shop_open_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/open"
+            android:hint="Enter open time here"
+            />
+
+        <TextView
+            android:id="@+id/close"
+            android:layout_below="@id/edit_shop_open_input"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Close Time:"/>
+
+        <EditText
+            android:id="@+id/edit_shop_close_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/close"
+            android:hint="Enter close time here"
+            />
+
+        <TextView
+            android:id="@+id/cover_image"
+            android:layout_below="@id/edit_shop_close_input"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text=" Upload cover image:"/>
+
+        <ImageView
+            android:id="@+id/edit_shop_cover_image_input"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/cover_image"
+            android:src="@drawable/ic_launcher_foreground"
+            />
+
+        <Button
+            android:id="@+id/edit_shop_upload_image_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_shop_cover_image_input"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#FEF7FF"
+            android:text="click here to upload"
+            android:textColor="#3F51B5" />
+
+
+        <Button
+            android:id="@+id/edit_shop_btn"
+            android:layout_below="@+id/edit_shop_upload_image_btn"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#4CAF50"
+            android:textSize="16dp"
+            android:text="Update"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/admin_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminStartActivity">
+
+    <TextView
+        android:id="@+id/welcome_admin_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="Welcome Admin"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/get_started_admin_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome_admin_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Get started now"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/admin_register_button"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/admin_sign_in_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#2196F3"
+        android:text="Sign Up"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/admin_sign_in_button"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/get_started_admin_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#549A03"
+        android:text="Sign in"
+        android:textSize="24sp" />
+
+
+</RelativeLayout>

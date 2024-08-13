@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permissions for reading and writing external storage -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
+    <!-- Optional permissions for backward compatibility -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" /> <!-- For backward compatibility (optional) -->
+
+    <!-- Optional location permissions (if your app uses location features) -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Food_Deliver_MobileApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".EditShopActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TViewItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ItemViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity android:name=".UserHomeActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".AdminStartActivity" />
+        <activity android:name=".AdminRegistrationActivity" />
+        <activity android:name=".AdminLoginActivity" />
+        <activity android:name=".AdminHomeActivity" />
+        <activity android:name=".AdminProfileActivity" />
+        <activity android:name=".EditProfileActivity" />
+        <activity android:name=".DinnerActivity" />
+        <activity android:name=".LunchActivity" />
+        <activity android:name=".DisplayItemsActivity" />
+        <activity android:name=".DetailedViewActivity" />
+        <activity android:name=".ViewActivity" />
+        <activity android:name=".AddActivity" />
+        <activity android:name=".AdminAddPromotionActivity" />
+        <activity android:name=".OrderDetailsActivity" />
+        <activity android:name=".OrderSummaryActivity"/>
+        <activity android:name=".ViewOrdersActivity"/>
+        <activity android:name=".UserOrderActivity"/>
+        <activity android:name=".FeedbackActivity"/>
+
+    </application>
+
+</manifest>

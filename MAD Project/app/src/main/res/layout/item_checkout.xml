@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    tools:context=".CheckoutActivity">
+
+    <ImageView
+        android:id="@+id/food_item_image"
+        android:layout_width="0dp"
+        android:layout_height="350dp"
+        android:src="@drawable/burger"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/food_item_name"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/food_item_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Double Mac"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintTop_toBottomOf="@id/food_item_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/food_item_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Description of the food item."
+        android:textSize="16sp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        app:layout_constraintTop_toBottomOf="@id/food_item_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/quantity_selector"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/food_item_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/button_decrease"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="-"
+            android:textSize="18sp"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+
+        <TextView
+            android:id="@+id/quantity_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="18sp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"/>
+
+        <Button
+            android:id="@+id/button_increase"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="+"
+            android:textSize="18sp"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/food_item_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Total: $9.99"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/quantity_selector"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="end"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/button_checkout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4CAF50"
+        android:padding="16dp"
+        android:text="Order Now"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/food_item_price" />
+</androidx.constraintlayout.widget.ConstraintLayout>

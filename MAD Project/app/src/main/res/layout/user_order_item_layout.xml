@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- Order ID TextView -->
+    <TextView
+        android:id="@+id/order_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:text="Order ID" />
+
+    <!-- Order Date TextView -->
+    <TextView
+        android:id="@+id/order_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_id"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:text="Order Date" />
+
+
+    <!-- Total Amount TextView -->
+    <TextView
+        android:id="@+id/order_total_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_date"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:text="Total Amount" />
+
+    <TextView
+        android:id="@+id/order_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_total_amount"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:text="Order State" />
+
+    <Button
+        android:id="@+id/give_feedback_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/order_state"
+        android:text="Give Feedback" />
+
+</RelativeLayout>

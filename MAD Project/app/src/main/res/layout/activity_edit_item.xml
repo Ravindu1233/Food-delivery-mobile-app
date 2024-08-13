@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/edit_item_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerCrop" />
+
+    <EditText
+        android:id="@+id/edit_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Item Name"
+        android:layout_below="@+id/edit_item_image"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/edit_item_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:layout_below="@+id/edit_item_name"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/edit_item_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Price"
+        android:layout_below="@+id/edit_item_description"
+        android:layout_marginBottom="8dp"/>
+
+    <Spinner
+        android:id="@+id/edit_item_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/item_categories"
+        android:layout_below="@+id/edit_item_price"
+        android:layout_marginBottom="8dp"/>
+
+    <Spinner
+        android:id="@+id/edit_item_availability"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/item_availability_options"
+        android:layout_below="@+id/edit_item_category"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btn_edit_upload_image"
+        android:layout_below="@+id/edit_item_availability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Image"
+   />
+
+    <Button
+        android:id="@+id/btn_edit_update"
+        android:layout_below="@+id/btn_edit_upload_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        />
+
+</RelativeLayout>

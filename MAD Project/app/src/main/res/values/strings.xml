@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Food_Deliver_MobileApp</string>
+    <string name="register_now">Register Now</string>
+    <string name="name">Name</string>
+    <string name="name_hint">Enter your name</string>
+    <string name="email">Email</string>
+    <string name="email_hint">Enter your email</string>
+    <string name="phone">Phone Number</string>
+    <string name="phone_hint">Enter your phone number</string>
+    <string name="password">Password</string>
+    <string name="password_hint">Password must contain 8 characters</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="confirm_password_hint">Confirm your password</string>
+    <string name="register">Register</string>
+    <string name="login_now">Login Now</string>
+    <string name="login">Login</string>
+    <string name="address">Address Line</string>
+    <string name="address_hint">Enter your address line</string>
+    <string name="city">City</string>
+    <string name="city_hint">Enter your city</string>
+    <string name="welcome">Welcome</string>
+    <string name="profile">Profile</string>
+    <string name="profile_name">Name</string>
+    <string name="profile_email">Email</string>
+    <string name="profile_phone">Phone</string>
+    <string name="profile_address">Address</string>
+    <string name="profile_city">City</string>
+
+    <string name="admin">Admin</string>
+    <string name="welcome_admin">Welcome Admin</string>
+    <string name="get_started_now">Get started now</string>
+    <string name="admin_register">Register</string>
+    <string name="admin_sign_in">Sign in</string>
+
+    <string name="admin_register_now">Register Now</string>
+    <string name="admin_name">Name</string>
+    <string name="admin_name_hint">Enter your name here</string>
+    <string name="admin_email">Email</string>
+    <string name="admin_email_hint">Enter your email here</string>
+    <string name="admin_password">Password</string>
+    <string name="admin_password_hint">Enter your password here</string>
+    <string name="admin_confirm_password">Confirm Password</string>
+    <string name="admin_confirm_password_hint">Confirm your password here</string>
+
+    <string name="sign_in_now">Sign In Now</string>
+
+    <string name="admin_home_welcome">Welcome, %1$s</string>
+    <string name="admin_profile_button">Admin Profile</string>
+    <string name="admin_profile_name_label">Name: </string>
+    <string name="admin_profile_email_label">Email: </string>
+
+    <string name="profile_image">Profile Image</string>
+    <string name="select_image">Upload Image</string>
+
+
+    <string name="menu_icon">menu_icon\n</string>
+    <string name="promotion_banner">promotion\n</string>
+    <string name="item_image_desc">image</string>
+    <string name="_199_99">199.99</string>
+    <string name="_4_9">4.9</string>
+    <string name="star_icon_desc">star\n</string>
+    <string name="rating">4.9</string>
+    <string name="price">199.99</string>
+    <string name="my_account">My Account</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="fried_noodles_desc">noodles\n</string>
+    <string name="macdonald_desc">mac\n</string>
+    <string name="kfc_desc">kfc\n</string>
+    <string name="todo">TODO</string>
+
+    <string-array name="item_categories">
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+    </string-array>
+
+    <string-array name="item_availability_options">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="review_categories">
+        <item>Shop</item>
+        <item>Item</item>
+    </string-array>
+
+</resources>

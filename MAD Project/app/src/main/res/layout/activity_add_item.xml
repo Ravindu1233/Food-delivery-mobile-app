@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AddItemActivity">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add New Item"
+            android:textSize="25dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/toolbar"/>
+
+        <TextView
+            android:id="@+id/second_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter item details below"
+            android:textSize="16dp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/title"/>
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_below="@id/second_title"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Item Name:"/>
+
+        <EditText
+            android:id="@+id/item_name_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/item_name"
+            android:hint="Enter name here"
+            />
+
+        <TextView
+            android:id="@+id/item_description"
+            android:layout_below="@id/item_name_input"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Item Description:"/>
+
+        <EditText
+            android:id="@+id/item_description_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/item_description"
+            android:hint="Enter description here"
+            />
+
+        <TextView
+            android:id="@+id/item_price"
+            android:layout_below="@id/item_description_input"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Item Price:"/>
+
+        <EditText
+            android:id="@+id/item_price_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/item_price"
+            android:hint="Enter price here"
+            />
+
+
+        <TextView
+            android:id="@+id/item_category"
+            android:layout_below="@id/item_price_input"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Item Category:"/>
+
+        <Spinner
+            android:id="@+id/item_category_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_category"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp" />
+
+
+        <TextView
+            android:id="@+id/item_availability"
+            android:layout_below="@id/item_category_spinner"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Item Availability:"/>
+
+        <Spinner
+            android:id="@+id/item_availability_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_availability"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp" />
+
+
+
+        <TextView
+            android:id="@+id/item_cover_image"
+            android:layout_below="@id/item_availability_spinner"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text=" Upload cover image:"/>
+
+        <ImageView
+            android:id="@+id/item_cover_image_input"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/item_cover_image"
+            android:src="@drawable/ic_launcher_foreground"
+            />
+
+        <Button
+            android:id="@+id/upload_image_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_cover_image_input"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#FEF7FF"
+            android:text="click here to upload"
+            android:textColor="#3F51B5" />
+
+
+        <Button
+            android:id="@+id/add_item_btn"
+            android:layout_below="@+id/upload_image_btn"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#4CAF50"
+            android:textSize="16dp"
+            android:text="Add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/cancel_item_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_item_btn"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#E91E63"
+            android:text="Cancel"
+            android:textSize="16dp" />
+
+
+    </RelativeLayout>
+</ScrollView>
