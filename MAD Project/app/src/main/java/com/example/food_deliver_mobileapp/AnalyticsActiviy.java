@@ -1,6 +1,8 @@
 package com.example.food_deliver_mobileapp;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,5 +18,10 @@ public class AnalyticsActiviy extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_analytics_activiy);
 
+    }
+
+    public void itemAnalyticsOnClick(View view){
+        Intent intent = new Intent(this, ItemAnalyticsActivity.class);
+        startActivity(intent);
     }
 }

@@ -31,6 +31,9 @@
         android:theme="@style/Theme.Food_Deliver_MobileApp"
         tools:targetApi="31">
         <activity
+            android:name=".ItemAnalyticsActivity"
+            android:exported="false" />
+        <activity
             android:name=".AnalyticsActiviy"
             android:exported="false" />
         <activity

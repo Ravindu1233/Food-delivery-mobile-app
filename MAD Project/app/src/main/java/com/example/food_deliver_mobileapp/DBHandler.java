@@ -15,7 +15,7 @@ public class DBHandler extends SQLiteOpenHelper {
 
     // Database name and version
     private static final String DB_NAME = "foodApp.db";
-    private static final int DB_VERSION = 12;
+    private static final int DB_VERSION = 13;
 
     // User table name and columns
     private static final String TABLE_USERS = "users";
@@ -48,15 +48,15 @@ public class DBHandler extends SQLiteOpenHelper {
     private static final String SHOP_IMAGE_COL = "shop_image";
 
     // Item table name and columns
-    public static final String TABLE_ITEM = "item";
-    private static final String ITEM_ID_COL = "item_id";
-    private static final String ITEM_NAME_COL = "item_name";
-    private static final String ITEM_DESCRIPTION_COL = "item_description";
-    private static final String ITEM_PRICE_COL = "item_price";
-    private static final String ITEM_IMAGE_COL = "item_image";
-    private static final String ITEM_CATEGORY_COL = "item_category";
-    private static final String ITEM_AVAILABILITY_COL = "item_availability";
-    private static final String ITEM_SHOP_ID_COL = "shop_id";
+    protected static final String TABLE_ITEM = "item";
+    protected static final String ITEM_ID_COL = "item_id";
+    protected static final String ITEM_NAME_COL = "item_name";
+    protected static final String ITEM_DESCRIPTION_COL = "item_description";
+    protected static final String ITEM_PRICE_COL = "item_price";
+    protected static final String ITEM_IMAGE_COL = "item_image";
+    protected static final String ITEM_CATEGORY_COL = "item_category";
+    protected static final String ITEM_AVAILABILITY_COL = "item_availability";
+    protected static final String ITEM_SHOP_ID_COL = "shop_id";
 
 
 
@@ -69,18 +69,18 @@ public class DBHandler extends SQLiteOpenHelper {
     private static final String PROMOTION_PERCENTAGE_COL = "promotion_percentage";
 
     // Order table name and columns
-    private static final String TABLE_ORDER = "order_table"; // Changed to avoid using reserved keyword
-    private static final String ORDER_ID_COL = "order_id";
-    private static final String ORDER_SHOP_ID_COL = "shop_id";
-    private static final String ORDER_USER_ID_COL = "user_id";
-    private static final String ORDER_ITEM_ID_COL = "item_id";
-    private static final String ORDER_DATE_COL = "order_date";
-    private static final String ORDER_STATES_COL = "order_states";
-    private static final String ORDER_PROMOTION_ID_COL = "promotion_id";
-    private static final String ORDER_QUANTITY_COL = "order_quantity";
-    private static final String ORDER_AMOUNT_COL = "order_amount";
-    private static final String ORDER_DISCOUNT_AMOUNT_COL = "order_discount_amount";
-    private static final String ORDER_TOTAL_AMOUNT_COL = "order_total_amount";
+    protected static final String TABLE_ORDER = "order_table"; // Changed to avoid using reserved keyword
+    protected static final String ORDER_ID_COL = "order_id";
+    protected static final String ORDER_SHOP_ID_COL = "shop_id";
+    protected static final String ORDER_USER_ID_COL = "user_id";
+    protected static final String ORDER_ITEM_ID_COL = "item_id";
+    protected static final String ORDER_DATE_COL = "order_date";
+    protected static final String ORDER_STATES_COL = "order_states";
+    protected static final String ORDER_PROMOTION_ID_COL = "promotion_id";
+    protected static final String ORDER_QUANTITY_COL = "order_quantity";
+    protected static final String ORDER_AMOUNT_COL = "order_amount";
+    protected static final String ORDER_DISCOUNT_AMOUNT_COL = "order_discount_amount";
+    protected static final String ORDER_TOTAL_AMOUNT_COL = "order_total_amount";
 
     // Review table name and columns
     private static final String TABLE_REVIEW = "review";

@@ -46,6 +46,7 @@
         android:layout_marginTop="5dp"
         android:layout_marginRight="30dp"
         android:backgroundTint="#009688"
+        android:onClick="itemAnalyticsOnClick"
         android:text="Total Orders Per Item"
         app:cornerRadius="15dp" />
 
