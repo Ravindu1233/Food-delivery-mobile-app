@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnalyticsActiviy">
+
+    <TextView
+        android:id="@+id/title_analytics"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:text="Data Analytics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/title_analytics2"
+        android:layout_below="@id/title_analytics"
+        android:text="Analytics for all the data"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/light_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/orders_per_customer_btn"
+        android:layout_below="@+id/title_analytics"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="#009688"
+        android:text="Total Orders Per Customer"
+        app:cornerRadius="15dp" />
+
+    <Button
+        android:id="@+id/orders_per_item_btn"
+        android:layout_below="@+id/orders_per_customer_btn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="#009688"
+        android:text="Total Orders Per Item"
+        app:cornerRadius="15dp" />
+
+</RelativeLayout>

@@ -60,4 +60,9 @@ public class AdminHomeActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void analyticsPanelClick(View view){
+        Intent intent = new Intent(this, AnalyticsActiviy.class);
+        startActivity(intent);
+    }
+
 }
