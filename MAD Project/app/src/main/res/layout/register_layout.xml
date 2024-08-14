@@ -32,7 +32,7 @@
         android:layout_below="@id/register_now_text"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:src="@drawable/dpphoto"
+        android:src="@drawable/profileimg"
         android:contentDescription="@string/profile_image" />
 
         <Button
@@ -42,7 +42,7 @@
             android:layout_below="@id/profile_image"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:backgroundTint="#E91E63"
+            android:backgroundTint="#009688"
             android:text="@string/select_image" />
 
         <Button
