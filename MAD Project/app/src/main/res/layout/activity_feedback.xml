@@ -54,7 +54,7 @@
             android:id="@+id/feedback_message"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Feed back eka methana dapan pako"
+            android:hint="Please Enter Feedback here"
             android:inputType="textMultiLine"
             android:gravity="top"
             android:lines="6"
