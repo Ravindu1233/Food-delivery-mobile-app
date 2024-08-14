@@ -84,6 +84,8 @@
         <activity android:name=".ViewOrdersActivity" />
         <activity android:name=".UserOrderActivity" />
         <activity android:name=".FeedbackActivity" />
+        <activity android:name=".OrdersPerCustomerActivity" />
+
     </application>
 
 </manifest>

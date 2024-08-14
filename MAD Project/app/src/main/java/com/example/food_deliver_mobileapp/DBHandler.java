@@ -593,6 +593,20 @@ public class DBHandler extends SQLiteOpenHelper {
     }
 
 
+    public Cursor getTotalOrdersPerCustomer() {
+        SQLiteDatabase db = this.getReadableDatabase();
+        String query = "SELECT u." + ID_COL + ", u." + NAME_COL + ", u." + EMAIL_COL + ", " +
+                "COUNT(o." + ORDER_ID_COL + ") as order_count, " +
+                "SUM(o." + ORDER_AMOUNT_COL + ") as total_amount " +
+                "FROM " + TABLE_USERS + " u " +
+                "JOIN " + TABLE_ORDER + " o " +
+                "ON u." + ID_COL + " = o." + ORDER_USER_ID_COL +
+                " GROUP BY u." + ID_COL + ", u." + NAME_COL + ", u." + EMAIL_COL;
+        return db.rawQuery(query, null);
+    }
+
+
+
 
 
 }
