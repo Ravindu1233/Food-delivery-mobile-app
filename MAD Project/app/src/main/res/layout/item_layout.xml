@@ -106,5 +106,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Order Now" />
+        <Button
+            android:id="@+id/btn_view_reviews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Review"
+            android:layout_marginStart="16dp" />
     </LinearLayout>
 </LinearLayout>
