@@ -53,7 +53,7 @@
             android:layout_marginLeft="30dp"
             android:layout_marginTop="40dp"
             android:layout_marginRight="30dp"
-            android:backgroundTint="#009688"
+            android:backgroundTint="#673AB7"
             android:onClick="addNewOnClick"
             android:text="Add New Shop"
             app:cornerRadius="15dp" />
@@ -64,9 +64,9 @@
             android:layout_height="80dp"
             android:layout_below="@id/add_new_shop_btn"
             android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
             android:layout_marginTop="5dp"
-            android:backgroundTint="#009688"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="#9C27B0"
             android:onClick="viewShopsOnClick"
             android:text="View Shops"
             app:cornerRadius="15dp" />
@@ -98,7 +98,7 @@
             android:layout_marginLeft="30dp"
             android:layout_marginTop="40dp"
             android:layout_marginRight="30dp"
-            android:backgroundTint="#009688"
+            android:backgroundTint="#4CAF50"
             android:onClick="addNewOnClick"
             android:text="Manage Orders"
             app:cornerRadius="15dp" />
@@ -130,7 +130,7 @@
             android:layout_marginLeft="30dp"
             android:layout_marginTop="40dp"
             android:layout_marginRight="30dp"
-            android:backgroundTint="#009688"
+            android:backgroundTint="#2196F3"
             android:onClick="addPromotionOnClick"
             android:text="Add Promotion"
             app:cornerRadius="8dp" />
@@ -162,10 +162,10 @@
             android:layout_marginLeft="30dp"
             android:layout_marginTop="40dp"
             android:layout_marginRight="30dp"
-            android:backgroundTint="#009688"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="#E91E63"
             android:onClick="analyticsPanelClick"
             android:text="Analytics panel"
-            android:layout_marginBottom="30dp"
             app:cornerRadius="15dp" />
 
         <TextView
