@@ -604,9 +604,30 @@ public class DBHandler extends SQLiteOpenHelper {
                 " GROUP BY u." + ID_COL + ", u." + NAME_COL + ", u." + EMAIL_COL;
         return db.rawQuery(query, null);
     }
+    public Cursor getReviewsByItemId(int itemId) {
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        String query = "SELECT r.*, u." + NAME_COL + " FROM " + TABLE_REVIEW + " r " +
+                "JOIN " + TABLE_USERS + " u ON r." + REVIEW_USER_ID_COL + " = u." + ID_COL +
+                " WHERE r." + REVIEW_ITEM_ID_COL + " = ?";
+        return db.rawQuery(query, new String[]{String.valueOf(itemId)});
+    }
 
 
 
-
+    public void addNewReview(int itemId, int userId, String reviewMessage) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(REVIEW_ITEM_ID_COL, itemId);
+        values.put(REVIEW_USER_ID_COL, userId);
+        values.put(REVIEW_MESSAGE_COL, reviewMessage);
+        db.insert(TABLE_REVIEW, null, values);
+        db.close();
+    }
+    public Cursor getItemById(int itemId) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        return db.rawQuery("SELECT * FROM " + TABLE_ITEM + " WHERE " + ITEM_ID_COL + " = ?", new String[]{String.valueOf(itemId)});
+    }
 
 }
+

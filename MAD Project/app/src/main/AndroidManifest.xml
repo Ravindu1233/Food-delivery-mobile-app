@@ -99,6 +99,7 @@
         <activity android:name=".UserOrderActivity" />
         <activity android:name=".FeedbackActivity" />
         <activity android:name=".OrdersPerCustomerActivity" />
+        <activity android:name=".ReviewActivity" />
 
     </application>
 

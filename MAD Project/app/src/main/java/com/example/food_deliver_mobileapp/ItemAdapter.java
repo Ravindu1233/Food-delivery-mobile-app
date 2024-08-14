@@ -70,7 +70,17 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
                 context.startActivity(intent);
             }
         });
+        // Set OnClickListener for the "View Reviews" button
+        holder.itemView.findViewById(R.id.btn_view_reviews).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, ReviewActivity.class);
+                intent.putExtra("itemId", currentItem.getId());
+                context.startActivity(intent);
+            }
+        });
     }
+
 
     @Override
     public int getItemCount() {
