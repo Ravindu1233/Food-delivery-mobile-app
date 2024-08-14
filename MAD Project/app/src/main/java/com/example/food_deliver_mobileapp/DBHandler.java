@@ -606,14 +606,14 @@ public class DBHandler extends SQLiteOpenHelper {
     }
     public Cursor getReviewsByItemId(int itemId) {
         SQLiteDatabase db = this.getReadableDatabase();
-        return db.query(TABLE_REVIEW,
-                null,
-                REVIEW_ITEM_ID_COL + " = ?",
-                new String[]{String.valueOf(itemId)},
-                null,
-                null,
-                null);
+
+        String query = "SELECT r.*, u." + NAME_COL + " FROM " + TABLE_REVIEW + " r " +
+                "JOIN " + TABLE_USERS + " u ON r." + REVIEW_USER_ID_COL + " = u." + ID_COL +
+                " WHERE r." + REVIEW_ITEM_ID_COL + " = ?";
+        return db.rawQuery(query, new String[]{String.valueOf(itemId)});
     }
+
+
 
     public void addNewReview(int itemId, int userId, String reviewMessage) {
         SQLiteDatabase db = this.getWritableDatabase();
@@ -629,9 +629,5 @@ public class DBHandler extends SQLiteOpenHelper {
         return db.rawQuery("SELECT * FROM " + TABLE_ITEM + " WHERE " + ITEM_ID_COL + " = ?", new String[]{String.valueOf(itemId)});
     }
 
-
-
-
-
-
 }
+

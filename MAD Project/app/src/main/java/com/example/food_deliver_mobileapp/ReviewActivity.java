@@ -5,8 +5,6 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -24,8 +22,6 @@ public class ReviewActivity extends AppCompatActivity {
     private DBHandler dbHandler;
     private int itemId;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +29,6 @@ public class ReviewActivity extends AppCompatActivity {
 
         // Initialize views
         reviewRecyclerView = findViewById(R.id.reviewRecyclerView);
-
         ImageView itemImageView = findViewById(R.id.itemImageView);
         TextView itemNameTextView = findViewById(R.id.itemNameTextView);
 
@@ -47,12 +42,15 @@ public class ReviewActivity extends AppCompatActivity {
             // Fetch reviews from the database
             reviewList = new ArrayList<>();
             Cursor cursor = dbHandler.getReviewsByItemId(itemId);
-            if (cursor.moveToFirst()) {
+
+            // Verify that the cursor is not null and contains data
+            if (cursor != null && cursor.moveToFirst()) {
                 do {
-                    @SuppressLint("Range") int reviewId = cursor.getInt(cursor.getColumnIndex("review_id"));
-                    @SuppressLint("Range") int userId = cursor.getInt(cursor.getColumnIndex("user_id"));
-                    @SuppressLint("Range") String reviewMessage = cursor.getString(cursor.getColumnIndex("review_message"));
-                    reviewList.add(new Review(reviewId, itemId, userId, reviewMessage));
+                    @SuppressLint("Range") int reviewId = cursor.getInt(cursor.getColumnIndexOrThrow("review_id"));
+                    @SuppressLint("Range") int userId = cursor.getInt(cursor.getColumnIndexOrThrow("user_id"));
+                    @SuppressLint("Range") String reviewMessage = cursor.getString(cursor.getColumnIndexOrThrow("review_message"));
+                    @SuppressLint("Range") String username = cursor.getString(cursor.getColumnIndexOrThrow("name")); // Ensure this column is in your query
+                    reviewList.add(new Review(reviewId, itemId, userId, reviewMessage, username));
                 } while (cursor.moveToNext());
             }
 
@@ -63,16 +61,13 @@ public class ReviewActivity extends AppCompatActivity {
 
             // Load item details
             Cursor itemCursor = dbHandler.getItemById(itemId);
-            if (itemCursor.moveToFirst()) {
-                @SuppressLint("Range") String itemName = itemCursor.getString(itemCursor.getColumnIndex("item_name"));
-                @SuppressLint("Range") byte[] itemImage = itemCursor.getBlob(itemCursor.getColumnIndex("item_image"));
+            if (itemCursor != null && itemCursor.moveToFirst()) {
+                @SuppressLint("Range") String itemName = itemCursor.getString(itemCursor.getColumnIndexOrThrow("item_name"));
+                @SuppressLint("Range") byte[] itemImage = itemCursor.getBlob(itemCursor.getColumnIndexOrThrow("item_image"));
 
                 itemNameTextView.setText(itemName);
                 itemImageView.setImageBitmap(BitmapFactory.decodeByteArray(itemImage, 0, itemImage.length));
             }
-
-
-
         }
     }
 
