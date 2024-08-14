@@ -8,6 +8,7 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
+        android:layout_marginTop="50dp"
         android:layout_height="150dp"
         app:cardCornerRadius="20dp"
         app:cardElevation="4dp"
@@ -46,9 +47,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="8dp"
-        android:backgroundTint="#009688"
-        android:text="Add Items"
+        android:backgroundTint="#4CAF50"
         android:onClick="addItemsOnClick"
+        android:text="Add Items"
         app:cornerRadius="8dp" />
 
     <Button
@@ -56,9 +57,9 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:backgroundTint="#009688"
-        android:text="View Items"
+        android:backgroundTint="#03A9F4"
         android:onClick="viewItemsOnClick"
+        android:text="View Items"
 
         app:cornerRadius="8dp" />
 

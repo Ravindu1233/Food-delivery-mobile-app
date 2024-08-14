@@ -13,19 +13,15 @@
         android:layout_height="match_parent"
         tools:context=".EditShopActivity">
 
-        <include
-            android:id="@+id/toolbar"
-            layout="@layout/toolbar"/>
-
         <TextView
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Edit Shop"
             android:textSize="25dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="50dp"
             android:layout_marginLeft="20dp"
-            android:layout_below="@id/toolbar"/>
+            />
 
         <TextView
             android:id="@+id/second_title"
