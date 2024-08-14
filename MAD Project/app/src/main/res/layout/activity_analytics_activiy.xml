@@ -27,25 +27,25 @@
 
     <Button
         android:id="@+id/orders_per_customer_btn"
-        android:layout_below="@+id/title_analytics"
         android:layout_width="match_parent"
         android:layout_height="80dp"
+        android:layout_below="@+id/title_analytics"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="40dp"
         android:layout_marginRight="30dp"
-        android:backgroundTint="#009688"
+        android:backgroundTint="#2196F3"
         android:text="Total Orders Per Customer"
         app:cornerRadius="15dp" />
 
     <Button
         android:id="@+id/orders_per_item_btn"
-        android:layout_below="@+id/orders_per_customer_btn"
         android:layout_width="match_parent"
         android:layout_height="80dp"
+        android:layout_below="@+id/orders_per_customer_btn"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="5dp"
         android:layout_marginRight="30dp"
-        android:backgroundTint="#009688"
+        android:backgroundTint="#673AB7"
         android:onClick="itemAnalyticsOnClick"
         android:text="Total Orders Per Item"
         app:cornerRadius="15dp" />
